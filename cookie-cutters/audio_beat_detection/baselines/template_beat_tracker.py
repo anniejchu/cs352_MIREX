@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Template beat tracker for GTZAN subset.
 

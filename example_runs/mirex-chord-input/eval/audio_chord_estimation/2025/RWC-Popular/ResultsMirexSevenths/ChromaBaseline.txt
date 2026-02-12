@@ -1,0 +1,52 @@
+List: "temp/c307ec9d-c333-50bc-9af5-0743654ed26b.txt"
+
+************************
+* Chords MirexSevenths *
+************************
+Duration of evaluated chords: 11244.4 s
+Average score: 32.8099%
+
+Chord detection results
+-----------------------
+Correct chords: 3689.27 s (32.8099%)
+Substituted chords: 7222.1 s (64.2287%)
+Deleted chords: 0 s (0%)
+Inserted chords: 332.88 s (2.96042%)
+Correct no-chords: 0.105 s (0.000933802%)
+
+Results per chord type
+----------------------
+maj: 2831.83 s (50.1494%) of 5646.8 s (50.2189%)
+maj7: 0 s (0%) of 1057.76 s (9.40704%)
+7: 0 s (0%) of 687.485 s (6.11405%)
+min: 857.433 s (44.0931%) of 1944.6 s (17.294%)
+min7: 0 s (0%) of 1574.73 s (14.0046%)
+
+Results per number of chromas wrong
+-----------------------------------
+0 chromas wrong: 3689.27 s (32.8099%)
+  of which root correct: 3689.27 s (32.8099%)
+  of which root incorrect: 0 s (0%)
+1 chroma wrong: 3279.49 s (29.1657%)
+  of which 1 substitution: 1680.46 s (14.945%)
+  of which 1 deletion: 0 s (0%)
+  of which 1 insertion: 0 s (0%)
+2 chromas wrong: 2458.91 s (21.8679%)
+  of which 2 substitutions: 1560.68 s (13.8797%)
+  of which 1 substitution, 1 deletion: 1599.03 s (14.2207%)
+  of which 1 substitution, 1 insertion: 0 s (0%)
+3 chromas wrong: 1344.88 s (11.9605%)
+  of which 3 substitutions: 660.983 s (5.87835%)
+  of which 2 substitutions, 1 deletion: 898.228 s (7.98826%)
+  of which 2 substitutions, 1 insertion: 0 s (0%)
+4 chromas wrong: 138.824 s (1.23461%)
+  of which 4 substitutions: 0 s (0%)
+  of which 3 substitutions, 1 deletion: 683.899 s (6.08215%)
+  of which 3 substitutions, 1 insertion: 0 s (0%)
+
+Root/type results
+-----------------
+Both correct: 3689.27 s (32.8099%)
+Only root correct: 2522.28 s (22.4315%)
+Only type correct: 1373.09 s (12.2114%)
+Both wrong: 3326.74 s (29.5858%)

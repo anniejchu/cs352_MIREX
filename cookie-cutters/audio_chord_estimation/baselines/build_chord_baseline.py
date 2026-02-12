@@ -1,5 +1,4 @@
-#!/usr/bin/env python3
-"""Build an input folder + trivial chord baseline for MIREX chord estimation.
+"""Build an input folder + dumb chord baseline for MIREX chord estimation.
 
 Copies Ground-Truth .lab files and writes predictions with a single chord label
 spanning the entire audio duration.

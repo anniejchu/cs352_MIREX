@@ -1,0 +1,39 @@
+List: "temp/c307ec9d-c333-50bc-9af5-0743654ed26b.txt"
+
+**********************
+* Chords MirexMajMin *
+**********************
+Duration of evaluated chords: 11591.8 s
+Average score: 44.7735%
+
+Chord detection results
+-----------------------
+Correct chords: 5190.04 s (44.7735%)
+Substituted chords: 6068.73 s (52.3539%)
+Deleted chords: 0 s (0%)
+Inserted chords: 332.88 s (2.8717%)
+Correct no-chords: 0.105 s (0.000905816%)
+
+Results per chord type
+----------------------
+maj: 3660.25 s (47.4327%) of 7716.71 s (66.5707%)
+min: 1529.79 s (43.1893%) of 3542.06 s (30.5567%)
+
+Results per number of chromas wrong
+-----------------------------------
+0 chromas wrong: 5190.04 s (44.7735%)
+  of which root correct: 5190.04 s (44.7735%)
+  of which root incorrect: 0 s (0%)
+1 chroma wrong: 2563.66 s (22.1163%)
+  of which 1 substitution: 2563.66 s (22.1163%)
+2 chromas wrong: 2456.2 s (21.1892%)
+  of which 2 substitutions: 2456.2 s (21.1892%)
+3 chromas wrong: 1048.87 s (9.04838%)
+  of which 3 substitutions: 1048.87 s (9.04838%)
+
+Root/type results
+-----------------
+Both correct: 5190.04 s (44.7735%)
+Only root correct: 1178.55 s (10.1672%)
+Only type correct: 2155.79 s (18.5976%)
+Both wrong: 2734.39 s (23.5891%)

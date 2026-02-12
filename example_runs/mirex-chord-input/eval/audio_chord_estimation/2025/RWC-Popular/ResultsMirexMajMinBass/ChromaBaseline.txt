@@ -1,0 +1,45 @@
+List: "temp/c307ec9d-c333-50bc-9af5-0743654ed26b.txt"
+
+**************************
+* Chords MirexMajMinBass *
+**************************
+Duration of evaluated chords: 11591.8 s
+Average score: 41.4071%
+
+Chord detection results
+-----------------------
+Correct chords: 4799.8 s (41.4071%)
+Substituted chords: 6458.96 s (55.7203%)
+Deleted chords: 0 s (0%)
+Inserted chords: 332.88 s (2.8717%)
+Correct no-chords: 0.105 s (0.000905816%)
+
+Results per chord type
+----------------------
+maj/1: 0 s (n/a) of 0 s (0%)
+maj/5: 0 s (0%) of 330.157 s (2.84821%)
+maj/3: 0 s (0%) of 598.356 s (5.16191%)
+maj: 3304.95 s (48.6868%) of 6788.19 s (58.5606%)
+min/1: 0 s (n/a) of 0 s (0%)
+min/5: 0 s (0%) of 79.47 s (0.685574%)
+min/b3: 0 s (0%) of 52.209 s (0.450398%)
+min: 1494.85 s (43.8324%) of 3410.38 s (29.4207%)
+
+Results per number of chromas wrong
+-----------------------------------
+0 chromas wrong: 5190.04 s (44.7735%)
+  of which root correct: 4799.8 s (41.4071%)
+  of which root incorrect: 390.232 s (3.36646%)
+1 chroma wrong: 2563.66 s (22.1163%)
+  of which 1 substitution: 2563.66 s (22.1163%)
+2 chromas wrong: 2456.2 s (21.1892%)
+  of which 2 substitutions: 2456.2 s (21.1892%)
+3 chromas wrong: 1048.87 s (9.04838%)
+  of which 3 substitutions: 1048.87 s (9.04838%)
+
+Root/type results
+-----------------
+Both correct: 4799.8 s (41.4071%)
+Only root correct: 1568.79 s (13.5336%)
+Only type correct: 1909.03 s (16.4688%)
+Both wrong: 2981.15 s (25.7179%)
