@@ -1,9 +1,8 @@
-#!/usr/bin/env python3
 """Run Beat This! baseline to produce .lab files (no evaluation).
 
 Assumes:
 - beat_this is installed and provides a `beat_this` CLI.
-- You have audio .wav files in a directory.
+- We have audio .wav files in a directory.
 - Ground-truth labels are available in the repo under
   MIREX-public-datasets/audio-beat-detection/Ground-Truth/<dataset>.
 """
