@@ -33,7 +33,7 @@ Such that it looks like this:
 One output file per audio file.
 
 - **Filename**: same basename as audio, extension `.lab`
-  - Example: `blues.00033.wav` → `blues.00033.lab`
+  - Example: `blues.00033.wav` -> `blues.00033.lab`
 - **Content**: one beat time per line, in seconds.
 - **No headers**, **no extra columns**.
 - **Sorted ascending**.
@@ -88,6 +88,19 @@ This matches the expect format for the MIREX evaluator should you want to use th
 It will compare:
 - Ground truth: `mirex-beat/Ground-Truth/GTZAN/*.lab`
 - Predictions: `mirex-beat/2026/GTZAN/<YOUR_TEAM_NAME>/*.lab`
+
+## Baseline
+A simple energy-based and waveform-peak baseline is provided in `template_beat_tracker.py`.
+It detects peaks in short-time RMS energy (or raw waveform amplitude) and writes beat times to `.lab` files.
+
+```bash
+python3 cookie-cutters/audio_beat_detection/baselines/template_beat_tracker.py \
+  --audio_dir /path/to/audio \
+  --out_dir /path/to/output \
+  --method energy
+```
+
+A stronger deep-learning baseline (Beat This!) is available in `run_beatthis_baseline.py`.
 
 ## Submission Checklist
 1. You created `<YOUR_MODEL_NAME>/`.
