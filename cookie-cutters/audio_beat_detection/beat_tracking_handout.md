@@ -1,22 +1,33 @@
-# Beat Tracking Assignment Handout (GTZAN Subset)
+# Beat Tracking Handout
 
 ## Goal
-Write a beat tracker that outputs beat times for each audio file in the provided N-file subset. Your outputs must match the expected file format so the evaluator can score them.
+Write a beat tracker that outputs beat times for each audio file in a given N-file directory. View the official [MIREX website](https://music-ir.org/mirex/wiki/2025:Audio_Beat_Tracking) for more info.
+
+Your outputs must match the expected file format so the evaluator can score them. We will use the MIREX evaluator to evaluate your beat tracker. 
 
 ## Required File Structure
-All paths are under the course repo root `<course_repo>/mirex-beat` [AC TODO: change path]:
+<!-- All paths are under the course repo root `<course_repo>/mirex-beat` [AC TODO: change path]: -->
+We should be able to run your evaluator like this.
 
-- `mirex_beat/Audio/GTZAN/`
-  - Input audio `.wav` files for the provided N-file subset.
-- `mirex-beat/Ground-Truth/GTZAN/`
-  - Ground-truth `.lab` files (provided). We will provide you 25 "training" examples.
-- `mirex-beat/2026/GTZAN/<YOUR_TEAM_NAME>/`
-  - Your prediction files go here.
+```
+foobar <input_dir_to_audio_samples> <output_dir_to_annotated_beats>
+```
 
-Example:
-- `mirex-beat/2026/GTZAN/AdaLovelace/blues.00033.lab`
 
-This matches the expect format for the MIREX evaluator should you want to use this during development.
+
+Such that it looks like this:
+```
+├── input_folder
+│   ├── Dataset1
+│   │   ├── track1.wav
+│   │   └── ...
+│   └── ...
+├── output_folder
+│   ├── Dataset1
+│   │   ├── track1.lab
+│   │   └── ...
+│   └── ...
+```
 
 ## Output File Format
 One output file per audio file.
@@ -43,20 +54,43 @@ Invalid example (extra column):
 1.38 2
 ```
 
+## Datasets you can use
+Example training datasets you can use include: 
+
+- Ballroom Dataset: [website](https://mtg.upf.edu/ismir2004/contest/tempoContest/node5.html) / [easy_import](https://mirdata.readthedocs.io/en/stable/_modules/mirdata/datasets/ballroom.html)
+
+- We may provide a training subset of GTZAN (dataset we will evaluate on)
+
+
 ## How We Will Evaluate
-We run the MIREX evaluator on a separate _evaluation_ subset of GTZAN files. Though you are welcome to try the evaluator itself on your own with the training set provided to you.
+The dataset used for evaluation will be GTZAN. We will either clone your beat tracker repository and run it on the evaluation day, or provide the evaluation set during the week of finals so you can generate predictions and submit them to us.
+
+You are welcome to try the evaluator itself on your own with whichever training set you use. 
 
 ```
 python3 mirex-evaluation/main.py audio_beat_detection <EVAL_RUN_NAME> --year 2026
 ```
 
-It will compare:
+Here is the folder structure we will be using for evaluation. 
 
+- `mirex_beat/Audio/GTZAN/`
+  - Input audio `.wav` files for the provided N-file directory.
+- `mirex-beat/Ground-Truth/GTZAN/`
+  - Ground-truth `.lab` files.
+- `mirex-beat/2026/GTZAN/<YOUR_TEAM_NAME>/`
+  - Your prediction files go here.
+
+Example:
+- `mirex-beat/2026/GTZAN/AdaLovelace/blues.00033.lab`
+
+This matches the expect format for the MIREX evaluator should you want to use this during development.
+
+It will compare:
 - Ground truth: `mirex-beat/Ground-Truth/GTZAN/*.lab`
 - Predictions: `mirex-beat/2026/GTZAN/<YOUR_TEAM_NAME>/*.lab`
 
 ## Submission Checklist
 1. You created `<YOUR_MODEL_NAME>/`.
-2. You have one `.lab` per audio file in the N-file subset.
-3. Each `.lab` contains only beat times (one per line).
+2. Your system will take in a path to audio directory and a path to the output directory of where to put each annotation. 
+3. Each output dir will have one `.lab` per audio file in the N-file input directory; each `.lab` contains only beat times (one per line).
 4. Filenames match audio basenames exactly.
