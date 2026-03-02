@@ -33,4 +33,7 @@ Then follow the instructions in `mirex-evaluation/README.MD`.
 
 See `cookie-cutters/Helpful_tips.md` for some general advice from EJ on getting started.
 
+See `CS352_Project_Slides.pdf` for class slides.
+
 For more info on MIREX, check out their [website](https://music-ir.org/mirex/wiki/MIREX_HOME)
+
