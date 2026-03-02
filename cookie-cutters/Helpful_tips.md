@@ -12,7 +12,7 @@ One avenue this might make you explore is finding a system or model that can _le
 Applying this 'investigative' approach to the baselines we gave you might make it easier to (1) understand how existing methods do it and (2) give you a more concrete starting place to explore from.
 
 ## Choosing and Using Datasets
-We are giving you a lot of freedom in what datasets you want to use for this, so be curious and search around. With that said, HW4 showed that what your data is, particualry when using deep learnbing, makes or breaks your system. With that in mind, I strongly suggest you do these things when finding a dataset:
+We are giving you a lot of freedom in what datasets you want to use for this, so be curious and search around. With that said, HW4 showed that what your data is, particularly when using deep learning, makes or breaks your system. With that in mind, I strongly suggest you do these things when finding a dataset:
 1. **READ** the documentation. Where is it from? How was it made? What does it contain? You should not be blindly throwing data into your system.
 2. **How compatible is it** with your system and other datasets? If you have 8 datasets all from a different source, you will have a lot of diversity which tends to lead to better results. A common issue is how you process that data. Is everything the same sample rate? Is one set quieter than the others? Be inquisitive about what you use and how it might affect your results, and manual inspection/listenting can be great to avoid glaring issues.
 3. **Try to source it ethically.** Not much else to be said on this one, but there are plenty of free to use (usually with crediting the creator) sets online
