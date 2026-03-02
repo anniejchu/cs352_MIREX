@@ -119,10 +119,8 @@ and collapses consecutive identical labels into timed segments.
 ```bash
 python3 cookie-cutters/audio_chord_estimation/baselines/build_chord_baseline.py \
   --audio_dir /path/to/audio \
-  --method chroma \
-  --dataset RWC-Popular \
-  --year 2026 \
-  --submission YourTeamName
+  --out_dir /path/to/mirex-chord/2026/RWC-Popular/YourTeamName \
+  --method chroma
 ```
 
 ## Submission Checklist

@@ -1,10 +1,10 @@
 """
-Template beat tracker for GTZAN subset.
+Simple baseline beat tracker for GTZAN subset.
 
 Usage:
-  python3 template_beat_tracker.py \
-    --audio_dir /home/annie/cs352/mirex-beat-input/Audio/GTZAN \
-    --out_dir /home/annie/cs352/mirex-beat-input/2025/GTZAN/YourName
+  python template_beat_tracker.py \
+    --audio_dir /path/to/audio_files
+    --out_dir /path/to/your_predictions
 """
 
 import argparse
@@ -30,11 +30,7 @@ def simple_energy_beats(y, sr, hop=512, win=1024, thresh=0.5):
     # Normalize and find peaks
     if energy.max() > 0:
         energy = energy / energy.max()
-    peaks = np.where(
-        (energy[1:-1] > energy[:-2])
-        & (energy[1:-1] > energy[2:])
-        & (energy[1:-1] > thresh)
-    )[0] + 1
+    peaks = np.where((energy[1:-1] > energy[:-2]) & (energy[1:-1] > energy[2:]) & (energy[1:-1] > thresh))[0] + 1
 
     # Convert frame index to time in seconds
     times = (peaks * hop) / sr
@@ -67,7 +63,7 @@ def main():
     ap.add_argument(
         "--method",
         choices=["energy", "wave"],
-        default="energy",
+        default="wave",
         help="Beat extraction method: energy (ST energy peaks) or wave (waveform peaks).",
     )
     args = ap.parse_args()

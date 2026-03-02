@@ -1,7 +1,7 @@
-# (Potentially) Helpful Tips
+# (Potentially) Helpful Tips from PM (EJ)
 
 ## Improving over Baselines
-If your teams goal is getting better evaluation metrics than the baseline implementations for either chord analysis or beat tracking, we don't want you to become overwhelmed with a sea of research papers when looking for inspiration. Many contemporary methods will have specific parameters, training setups, pipelines, etc, that might be hard to navigate at first, _especially_ if you're not comfortable with digesting research papers or specific deep learning concepts. 
+If your team's goal is getting better evaluation metrics than the baseline implementations for either chord analysis or beat tracking, we don't want you to become overwhelmed with a sea of research papers when looking for inspiration. Many contemporary methods will have specific parameters, training setups, pipelines, etc, that might be hard to navigate at first, _especially_ if you're not comfortable with digesting research papers or specific deep learning concepts. 
 
 For that reason, a good place to start is by thinking about what we've learned in class and the assignments. For either the chord or beat tracking implementations, think about what might make them weak or fragile, either from an assumption the solutions make to a lack of expressivity in the pipeline.
 
